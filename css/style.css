@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'AvenirLTStd-Book.otf';
+    src: url(../fonts/AvenirLTStd-Book.otf);
+}
+
+body{
+    font-family: 'AvenirLTStd-Book.otf';
+}
+
+header{
+    width: 100%;
+    background: #0C3C60;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.container{
+    width: 90%;
+    max-width: 1600px;
+    margin: auto;
+}
+
+#logo{
+    width: 20%;
+    font-size: 24px;
+    float: left;
+}
+
+nav{
+    width: 60%;
+    float: right;
+}
+
+nav > ul > li{
+    float: left;
+    list-style: none;
+    margin-left: 6%;
+}
+
+nav > ul > li > a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav > ul > li:last-child{
+    transform: translateY(-5px);
+}
+
+nav > ul > li:last-child span{
+    display: inline-block;
+    transform: translate(5px, -9px);
+}
+
+nav > ul > li:last-child svg{
+    fill: #fff;
+}
+
+#banner{
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+#banner > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#banner > .content{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    color: #000;
+    text-align: center;
+    padding: 20px 4%;
+}
+
+#banner >.content h5{
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+#banner >.content h1{
+    font-size: 60px;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+button{
+    background: transparent;
+    color: #0C3C60;
+    border: 2px solid;
+    padding: 20px 50px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+button:hover{
+    background: #0C3C60;
+    color: #fff;
+}
+
+#boxes{
+    padding: 120px 0;
+}
+
+#boxes > .container{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#boxes > .container > .col{
+    width: 26%;
+    padding: 20px 2%;
+}
+
+#boxes > .container > .col > h3{
+    letter-spacing: 0.05em;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+#boxes >.container >.col > p{
+    line-height: 1.6em;
+    font-size: 16px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
